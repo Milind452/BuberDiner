@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BuberDiner.Contracts\BuberDiner.Contracts.csproj" />
     <ProjectReference Include="..\BuberDiner.Application\BuberDiner.Application.csproj" />
     <ProjectReference Include="..\BuberDiner.Infrastructure\BuberDiner.Infrastructure.csproj" />
