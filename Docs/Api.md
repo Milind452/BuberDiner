@@ -3,7 +3,7 @@
 -   [Buber DinnerAPI](#buber-diner-api)
     -   [Auth](#auth)
         -   [Register](#register)
-            -   [RegisterRequest](#register-request)
+            -   [RegisterRequest](#register-requestv)
             -   [RegisterResponse](#register-response)
         -   [Login](#login)
             -   [LoginRequest](#login-request)
