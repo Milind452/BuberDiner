@@ -12,7 +12,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
     {
         var signingCredentials = new SigningCredentials(
             new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("super-secret-key")),
+                Encoding.UTF8.GetBytes("secret key lorem ipsum dolor sit amet")),
             SecurityAlgorithms.HmacSha256
         );
 
