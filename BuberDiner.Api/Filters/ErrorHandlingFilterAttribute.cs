@@ -8,11 +8,12 @@ public class ErrorHandlingFilterAttribute : ExceptionFilterAttribute
     public override void OnException(ExceptionContext context)
     {
         var exception = context.Exception;
-        context.Result = new ObjectResult(new
+        var errorResult = new
         {
             error = "An error occurred while processing your request.",
             message = exception.Message
-        })
+        };
+        context.Result = new ObjectResult(errorResult)
         { StatusCode = 500 };
         context.ExceptionHandled = true;
     }
